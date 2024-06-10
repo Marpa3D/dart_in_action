@@ -52,4 +52,23 @@ void main() {
   // на основе заданной строки
   String str3 = 'Классно!';
   print(str3 * 8);
+
+  // сравнение строк посимвольно
+  var val1 = 'Yes', val2 = 'Yes';
+  print(val1 == val2);
+
+  // Для сравнивания строк в алфавитном порядке нужен метод compareTo
+  String val3 = 'Папа';
+  print(val1.compareTo(val3));
+
+  // Проверить, входит ли символ или подстрока в строку
+  String valCon = 'Вот это да!';
+  print(valCon.contains('да')); // true
+  print(valCon.contains('о')); // true
+
+  // Удаление лишних пробелов в строке
+  String valStr = '    Это строка!    ';
+  print(valStr.trimLeft());
+  print(valStr.trimRight());
+  print(valStr.trim());
 }
