@@ -31,4 +31,25 @@ void main() {
   print(str); // Строка не изменилась
   String str1 = str.toUpperCase();
   print(str1); // А теперь изменилась!
+
+  // Преобразования типов. Перевод числа в строку и обратно
+
+  // String -> int
+  int valInt = int.parse('88');
+  print(valInt);
+
+  // String -> double
+  double valDouble = double.parse('12.8');
+  print(valDouble);
+
+  // int -> String
+  print(valInt.toString());
+
+  // double -> String
+  print(valDouble.toString());
+
+  // Операция объединения строк. Создает нужное колличество строк,
+  // на основе заданной строки
+  String str3 = 'Классно!';
+  print(str3 * 8);
 }
