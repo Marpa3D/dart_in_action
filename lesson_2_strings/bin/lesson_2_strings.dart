@@ -2,7 +2,7 @@ void main() {
   // Строки в Dart - последовательность символов в кодировке UTF-16
   // Строки неизменяемы (immutable)
 
-  var s1 = 'Мама мыла раму';
+  var s1 = 'Мама мыла рамы';
   String s2 = "Мама мыла две рамы";
   var s3 = ''' Многострочная 
   сторка''';
@@ -71,4 +71,18 @@ void main() {
   print(valStr.trimLeft());
   print(valStr.trimRight());
   print(valStr.trim());
+
+  // Замена одного символа или подстроки в строке
+  print(s1.replaceAll('мы', 'ру')); // Мама рула рары
+  print(s1.replaceAll('м', 'М')); // МаМа Мыла рамы
+
+  // Для разбиения строки на несколько строк, метод split
+  print(s1.split(' '));
+  print(s1.split('л'));
+  print(s1.split('мыла'));
+
+  // Проверить - строка пустая или нет?
+  String myStr = 'Это наполненная строка';
+  print(myStr.isEmpty); // false
+  print(myStr.isNotEmpty); // true
 }
