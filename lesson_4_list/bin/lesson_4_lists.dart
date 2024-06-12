@@ -24,6 +24,21 @@ void main() {
   myList.add(8);
   print(myList);
 
-  myList.addAll([1, 2, 4, 7, 8]);
+  myList.addAll([1, 2, 4, 7, 8, 9, 10]);
   print(myList);
+
+  // Длина списка
+  print(myList.length);
+
+  // Создание нового списка и добавление в него существующего
+  var myList2 = [10, 20, 30, 40, ...myList];
+  print(myList2);
+
+  // Расширение списка с помощью +=
+  myList2 += [50, 70, 80, 90];
+  print(myList2);
+
+  // Вставка элемента в нужную позицию. Метод insert
+  myList2.insert(0, 108);
+  print(myList2);
 }
